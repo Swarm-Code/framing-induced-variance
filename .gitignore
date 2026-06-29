@@ -37,3 +37,6 @@ paper/*.log
 paper/*.out
 paper/*.toc
 paper/Rplots.pdf
+
+# local-only video/demo notes
+*.local.md
