@@ -1,0 +1,9 @@
+framing,wrong_share
+neutral,0.064
+lead_entailed,0.062
+lead_refuted,0.2
+authority_entailed,0.054
+authority_refuted,0.098
+urgency_entailed,0.064
+doubt,0.074
+rhetorical_refuted,0.062

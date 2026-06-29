@@ -1,0 +1,5 @@
+benchmark,metric,n,baseline,baseline_ci,skeptic,skeptic_ci,delta,mcnemar_p,significant
+truthfulqa,truth_acc,40,0.875,"[0.775,0.975]",0.875,"[0.775,0.975]",0.0,1.0,False
+finqa,truth_acc,60,0.25,"[0.150,0.367]",0.25,"[0.150,0.367]",0.0,1.0,False
+misviz,TSM,7,0.571,"(n=7, no CI)",1.0,"(n=7, no CI)",0.429,,underpowered
+scshortcut,TSM,7,0.143,"(n=7, no CI)",0.286,"(n=7, no CI)",0.143,,underpowered

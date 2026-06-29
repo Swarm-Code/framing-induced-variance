@@ -1,0 +1,14 @@
+# Skeptic pipeline — verify-before-conclude (redraw / table-reread).
+# Hands the model the underlying table and instructs it to distrust the chart's
+# framing. Target: move TSM from negative (baseline) toward ~0+ (+15-20pp lift,
+# matching the published fix).
+dataset: misviz
+manifest: data/misviz/manifest.json
+pipeline: skeptic
+results: results/misviz_skeptic.jsonl
+
+verify: true
+# Number of cross-check passes (table re-read + clean redraw). 0 disables.
+k: 2
+# Allow the agent to abstain when chart and table disagree irreconcilably.
+allow_refusal: true

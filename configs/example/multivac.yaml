@@ -1,0 +1,54 @@
+# Multi-Vac bundle — drop this folder in and run:
+#   from multivac import Multivac
+#   mv = Multivac.from_config("configs/example")
+#
+# Everything below is data. No base-harness edits needed to benchmark a new agent.
+name: example-agent
+
+provider:
+  # Read the key from this env var (works offline if unset -> deterministic stub).
+  api_key_env: CEREBRAS_API_KEY
+  base_url: https://api.cerebras.ai/v1
+  model: gemma-4-31b
+  # offline: true   # uncomment to force the offline stub model
+
+agent:
+  system_prompt_file: prompts/main.md
+  tools:
+    - ref: tools:word_count          # bundle-local tools.py:word_count
+    - ref: tools:reverse_text
+
+skills:
+  - name: greeting-style
+    description: How this agent greets users
+    body: |
+      Always greet warmly and state one capability you can help with.
+
+hooks:
+  - name: block-secrets
+    ref: hooks:block_secret_tools     # bundle-local hooks.py:block_secret_tools
+    events: [pre_tool]
+    priority: 10
+  - name: tag-output
+    ref: hooks:tag_output
+    events: [post_run]
+
+subagents:
+  - name: summarizer
+    description: Summarizes text into one sentence
+    system_prompt: You compress text into a single faithful sentence. Reply with only the sentence.
+
+# mcp_servers:
+#   - name: filesystem
+#     transport: stdio
+#     command: uvx
+#     args: ["mcp-server-filesystem", "/tmp"]
+
+compaction:
+  after_messages: 30
+  keep_recent: 6
+
+limits:
+  tool_calls_limit: 15
+  request_limit: 20
+  max_subagent_depth: 3

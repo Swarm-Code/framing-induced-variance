@@ -1,0 +1,10 @@
+# Baseline pipeline — chart/numbers-only, no verification loop.
+# Reproduces the published MLLM failure: accuracy collapses to ~random on
+# misleading charts, i.e. strongly negative Truth-Shortcut Margin (TSM).
+dataset: misviz
+manifest: data/misviz/manifest.json
+pipeline: baseline
+results: results/misviz_baseline.jsonl
+
+# Skeptic-only knobs are ignored in baseline mode.
+verify: false

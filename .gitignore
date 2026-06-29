@@ -1,0 +1,39 @@
+# secrets
+.env
+
+# large re-downloadable inputs (full TabFact pull, ~130MB)
+data/
+
+# generated results — ignore by default, but KEEP the released FIV artifacts the
+# README / paper / demo depend on
+results/*
+!results/fiv_tabfact_scaled.json
+!results/fiv_variants.json
+!results/fiv_rates.csv
+!results/fiv_by_framing.csv
+!results/fiv_spec_curve.csv
+!results/external_finqa.json
+!results/external_truthfulqa.json
+!results/finqa_protocol_ablation.json
+!results/all_benchmarks_summary.csv
+
+# python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+
+# agent / IDE / build cruft
+.swarm/
+.idea/
+.multivac/
+debug/
+swarmos_debug.log
+loop_tracker.txt
+
+# LaTeX / R build artifacts (keep .tex, .R, final .pdf)
+paper/*.aux
+paper/*.log
+paper/*.out
+paper/*.toc
+paper/Rplots.pdf

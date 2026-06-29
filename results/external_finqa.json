@@ -1,0 +1,1231 @@
+{
+  "dataset": "finqa",
+  "n_items": 60,
+  "execs": 1,
+  "baseline_truth_acc": {
+    "point": 0.25,
+    "lo": 0.15,
+    "hi": 0.36666666666666664
+  },
+  "skeptic_truth_acc": {
+    "point": 0.25,
+    "lo": 0.15,
+    "hi": 0.36666666666666664
+  },
+  "delta_acc": 0.0,
+  "delta_ci": [
+    -0.08333333333333331,
+    0.08333333333333331
+  ],
+  "mcnemar": {
+    "b": 3,
+    "c": 3,
+    "p": 1.0,
+    "significant": false,
+    "cohens_h": 0.0
+  },
+  "baseline_results": [
+    {
+      "item_id": "finqa-000",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "baseline",
+      "model_answer": "To find the net change in net revenue during 2015, we subtract the 2014 net revenue from the 2015 net revenue based on the provided table:\n\n*   2015 net revenue: $5,829 million\n*   2014 net revenue: $5,735 million\n\nCalculation: $5,829 million - $5,735 million = $94 million\n\n94",
+      "followed_truth": true,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-001",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "baseline",
+      "model_answer": "To calculate the percentage of total facilities that are leased:\n\n1.  **Total leased facilities**: 8.1 million square feet\n2.  **Total facilities**: 56.0 million square feet\n3.  **Calculation**: (8.1 / 56.0) * 100 \u2248 14.46%\n\n14.46",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-002",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "baseline",
+      "model_answer": "Based on the provided text, the values for undesignated hedges (which are mentioned as $41.2 million and $42.1 million) are the only figures provided that relate to hedging amounts for those years.\n\nCalculation:\n((41.2 - 42.1) / 42.1) * 100 = -2.1377...%\n\n-2.14%",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-003",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "baseline",
+      "model_answer": "121.4",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-005",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "baseline",
+      "model_answer": "To calculate the percentage change in total rental expense under operating leases from fiscal 2005 to fiscal 2006:\n\n1.  **Identify the values:**\n    *   Rental expense in fiscal 2006: $100,690,000\n    *   Rental expense in fiscal 2005: $92,710,000\n\n2.  **Calculate the change:**\n    $100,690,000 - $92,710,000 = $7,980,000\n\n3.  **Calculate the percentage change:**\n    ($7,980,000 / $92,710,000) * 100 \u2248 8.61%\n\n8.61",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-006",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "baseline",
+      "model_answer": "To determine the percent of total recourse debt that is current, we identify the current portion (maturing in the next year, 2011) and the total recourse debt from the provided table:\n\n1.  **Current Recourse Debt (2011):** $463 million\n2.  **Total Recourse Debt:** $4,612 million\n\n**Calculation:**\n(Current Debt / Total Debt) * 100\n($463 / $4,612) * 100 \u2248 10.039%\n\n10.039",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-007",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "baseline",
+      "model_answer": "To find the percentage of future minimum rental payments due in 2018, we use the data provided in the table:\n\n1.  **Amount due in 2018:** $301 million\n2.  **Total amount:** $2,575 million\n\nCalculation:\n(301 / 2,575) * 100 \u2248 11.689%\n\n11.689",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-008",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "baseline",
+      "model_answer": "Based on the provided table, Altria Group, Inc. outperformed the S&P 500 by the end of the period.\n\nBy December 2016, the cumulative total shareholder return for **Altria Group, Inc.** was **$286.61**, while the **S&P 500** was **$198.09**.",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-009",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "baseline",
+      "model_answer": "To find the change in unrecognized tax benefits (uncertain tax positions) from the end of 2014 to the end of 2015, we look at the provided table:\n\n*   Balance as of December 31, 2015: $1,136 million\n*   Balance as of December 31, 2014: $1,171 million\n\nChange = Balance 2015 - Balance 2014\nChange = $1,136 million - $1,171 million = -$35 million\n\n-35",
+      "followed_truth": true,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-010",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "baseline",
+      "model_answer": "To calculate the growth rate of standby letters of credit from 2006 to 2007:\n\n1.  **Identify the values from the table:**\n    *   2006 balance: $4,926 million\n    *   2007 balance: $4,711 million\n\n2.  **Calculate the growth rate using the formula:**\n    $\\text{Growth Rate} = \\frac{\\text{New Value} - \\text{Old Value}}{\\text{Old Value}}$\n    $\\text{Growth Rate} = \\frac{4711 - 4926}{4926}$\n    $\\text{Growth Rate} = \\frac{-215}{4926} \\approx -0.04364$\n\n3.  **Convert to percentage:**\n    $-0.04364 \\times 100 = -4.364\\%$\n\n-4.364%",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-011",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "baseline",
+      "model_answer": "To calculate the debt-to-asset ratio, we use the values for \"total debt including current maturities\" and \"total assets\" for the most recent period provided (December 31, 2016).\n\n*   **Total Debt (2016):** 817,388 (in thousands)\n*   **Total Assets (2016):** 3,644,331 (in thousands)\n\nCalculation:\nDebt-to-Asset Ratio = Total Debt / Total Assets\nDebt-to-Asset Ratio = 817,388 / 3,644,331 \u2248 0.2243\n\n0.2243",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-012",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "baseline",
+      "model_answer": "137.4",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-013",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "baseline",
+      "model_answer": "Based on the table provided, the five-year cumulative total return (at the end of the period ending June 30, 2019) for the two peer groups starting from an initial $100 investment in 2014 is as follows:\n\n- **2019 peer group:** 281.09\n- **2018 peer group:** 286.22\n\nComparing the two values, 281.09 is not greater than 286.22.\n\nNo",
+      "followed_truth": true,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-014",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "baseline",
+      "model_answer": "To calculate the percentage change in the balance (which represents the deferred tax and regulatory assets/positions based on the table provided) from 2013 to 2014:\n\n1.  **Identify the balance at December 31, 2013:** $177,947\n2.  **Identify the balance at December 31, 2014:** $195,237\n3.  **Calculate the difference:** $195,237 - $177,947 = $17,290\n4.  **Calculate the percentage change:** ($17,290 / $177,947) * 100 \u2248 9.71%\n\n9.71%",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-015",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "baseline",
+      "model_answer": "To find the average net annual change in discounted future net cash flows for the years 2011, 2010, and 2009, we identify the \"net change for the year\" for each:\n\n*   **2011:** 4,648\n*   **2010:** 3,625\n*   **2009:** 1,620\n\nAverage = (4,648 + 3,625 + 1,620) / 3\nAverage = 9,893 / 3\nAverage = 3,297.666...\n\nRounding to the nearest whole number or providing the precise decimal:\n3297.67",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-016",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "baseline",
+      "model_answer": "65",
+      "followed_truth": true,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-017",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "baseline",
+      "model_answer": "To find the average net revenue between 2016 and 2017, we use the values provided in the table:\n- 2016 net revenue: $705.4 million\n- 2017 net revenue: $703.1 million\n\nCalculation:\nAverage = ($705.4 + $703.1) / 2\nAverage = $1,408.5 / 2\nAverage = $704.25\n\n704.25",
+      "followed_truth": true,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-018",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "baseline",
+      "model_answer": "To find the percentage, we need the combined amount of accrued interest and penalties and the total ending balance as of November 28, 2008.\n\n1.  **Combined amount of accrued interest and penalties:** The text states, \"as of november 28 , 2008 , the combined amount of accrued interest and penalties... was approximately $ 15.3 million.\"\n2.  **Total ending balance as of November 28, 2008:** From the table, the \"ending balance as of november 28 2008\" is \"$ 139549\" (which represents $139.549 million, as corroborated by the text mentioning $139.5 million).\n\nCalculation:\n(15.3 / 139.549) * 100 \u2248 10.963%\n\n10.963",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-019",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "baseline",
+      "model_answer": "Based on the provided text and table, there is no mention of the fair value of assets segregated for the benefit of securities and futures brokerage customers. The provided context focuses on the components of income before income tax expense and reserve balances deposited with federal reserve banks.\n\nTherefore, the information needed to answer this question is not available in the context provided.",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-020",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "baseline",
+      "model_answer": "I am sorry, but the provided text and table do not contain information regarding the value of commercial mortgage loans designated for sale at fair value for the years 2008 or 2009. The data provided only covers December 31, 2011, and December 31, 2012.",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-021",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "baseline",
+      "model_answer": "To find the difference in percentage cumulative 5-year total shareholder return for Fidelity National Information Services, Inc. compared to the S&P 500 for the period ending 12/16, we look at the values provided in the table for that date:\n\n*   **Fidelity National Information Services, Inc. (12/16):** 311.81\n*   **S&P 500 (12/16):** 198.18\n\nThe value represents the return on a $100 investment. To find the difference:\n311.81 - 198.18 = 113.63\n\n113.63",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-022",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "baseline",
+      "model_answer": "To find the percentage change from the highest to the lowest share price for the quarter ended March 31, 2015:\n\n1.  **Identify the high and low prices**: For the quarter ended March 31, 2015, the high was $101.88 and the low was $93.21.\n2.  **Calculate the difference**: $101.88 - $93.21 = $8.67.\n3.  **Calculate the percentage change**: ($8.67 / $101.88) * 100 \u2248 8.51%.\n\n8.51",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-023",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "baseline",
+      "model_answer": "To calculate the percentage of total contractual obligations and off-balance sheet arrangements contractual obligations that is due to capital lease obligations, we use the data from the provided table:\n\n1.  **Capital lease obligations**: $230 million\n2.  **Total contractual obligations**: $13,208 million\n\n**Calculation**:\n(230 / 13,208) * 100 \u2248 1.741%\n\n1.741",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-024",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "baseline",
+      "model_answer": "To find the ratio of total flight attendants to total maintenance personnel, we use the data from the table:\n\n*   Total flight attendants: 26,900\n*   Total maintenance personnel: 16,900\n\nRatio = 26,900 / 16,900 \u2248 1.59\n\n1.59",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-025",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "baseline",
+      "model_answer": "To find the ratio of the square footage in Alpharetta, Georgia to Charlotte, North Carolina as of December 31, 2007:\n\n1.  **Identify the square footage for Alpharetta, Georgia**: 219,000\n2.  **Identify the square footage for Charlotte, North Carolina**: 83,000\n3.  **Calculate the ratio**: 219,000 / 83,000 \u2248 2.63855\n\n2.63855",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-026",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "baseline",
+      "model_answer": "To find the percent of the income tax benefit relative to the share-based compensation cost in 2010, we use the values from the provided table:\n\n*   **Share-based compensation cost (2010):** $18.1 million\n*   **Income tax benefit (2010):** $6.3 million\n\nCalculation:\n(6.3 / 18.1) * 100 \u2248 34.806%\n\n34.81",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-027",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "baseline",
+      "model_answer": "To calculate the percentage change in the gross liability for unrecognized tax benefits from December 1, 2007, to November 28, 2008:\n\n1.  **Beginning Balance (Dec 1, 2007):** $201,808 (thousands)\n2.  **Ending Balance (Nov 28, 2008):** $139,549 (thousands)\n3.  **Calculation:**\n    *   Change = Ending Balance - Beginning Balance\n    *   Change = $139,549 - $201,808 = -$62,259\n    *   Percentage Change = (Change / Beginning Balance) * 100\n    *   Percentage Change = (-62,259 / 201,808) * 100 \u2248 -30.85%\n\n-30.85",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-028",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "baseline",
+      "model_answer": "To calculate the total impairment costs from 2003 to 2005:\n\n1.  **Impairment of the Homerville, Georgia DC:**\n    *   2004: $0.5 million\n    *   2003: $0.6 million\n2.  **Impairment of certain store assets:**\n    *   2005: $0.6 million\n    *   2004: $0.2 million\n    *   2003: $0.2 million\n\nTotal = 0.5 + 0.6 + 0.6 + 0.2 + 0.2 = 2.1\n\n2.1",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-029",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "baseline",
+      "model_answer": "I am sorry, but the provided text does not contain information regarding the specific amount of borrowing under the term loan facility nor the total contractual maturities of long-term debt obligations due subsequent to December 31, 2016. Therefore, I cannot calculate the requested percentage.",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": true
+    },
+    {
+      "item_id": "finqa-030",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "baseline",
+      "model_answer": "To calculate the percent of total operating revenues associated with agricultural products in 2015, we first need the total operating revenue for that year.\n\nBased on the provided table for 2015:\n*   Agricultural products: $3,581 million\n*   Automotive: $2,154 million\n*   Chemicals: $3,543 million\n\n*Note: The provided text snippet for the table is cut off after \"Chemicals,\" and the total operating revenue is not explicitly listed in the provided context. However, usually, in these types of data extraction tasks from the Union Pacific 2015 10-K, the total freight revenue for 2015 is $36,244 million.*\n\nUsing the total freight revenue of $36,244 million:\n(3,581 / 36,244) * 100 \u2248 9.88%\n\n9.88",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-031",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "baseline",
+      "model_answer": "To find what percent of net interest revenue total operating expenses were in 2009, we use the values provided in the table:\n\n*   **Total operating expenses (2009):** $896 million\n*   **Net interest revenue (2009):** $3,173 million\n\nCalculation:\n($896 / $3,173) * 100 \u2248 28.24%\n\n28.24",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-032",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "baseline",
+      "model_answer": "829",
+      "followed_truth": true,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-033",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "baseline",
+      "model_answer": "To calculate the percent of CIB markets net interest income as part of the managed net interest income for 2018:\n\n1.  **CIB markets net interest income (2018):** $3,087 million\n2.  **Net interest income on a managed basis (2018):** $55,687 million\n\nCalculation: ($3,087 / $55,687) * 100 \u2248 5.54%\n\n5.54",
+      "followed_truth": true,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-034",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "baseline",
+      "model_answer": "To find the fair value of total securities available for sale without the securities classified as corporate stocks as of December 31, 2012, we use the following data from the provided text and table:\n\n1.  **Fair value of total securities available for sale (December 31, 2012):** According to the table, this value is **$51,052 million**.\n2.  **Fair value of securities classified as corporate stocks and other (December 31, 2012):** The text states that this includes **$367 million**.\n\n**Calculation:**\n$51,052 million - $367 million = $50,685 million\n\n50685",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-035",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "baseline",
+      "model_answer": "Based on the provided text, as of March 31, 2008, the company recorded a liability for unrecognized tax benefits (including accrued interest) of $0.2 million. The text does not provide specific \"settlement\" figures from fiscal 2007 that would allow for a different calculation; it only states the current liability as of the requested date.\n\n0.2",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-036",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "baseline",
+      "model_answer": "Based on the provided text, the table lists the \"approximate square footage\" for the facility in Alpharetta, Georgia as 254,000. The text explicitly states that the company \"lease[s]\" its facilities (e.g., \"all other leased facilities,\" \"we also lease all 30 e*trade branches\"). There is no information provided regarding any square footage that is *not* leased.\n\nSince all mentioned facilities are described as leased, the percent of square footage not leased is 0.\n\n0",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-037",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "baseline",
+      "model_answer": "To find the percent of square footage in Alpharetta, Georgia that was not leased, we use the following data from the text and table:\n- Total square footage in Alpharetta, Georgia: 219,000 square feet.\n- Square footage of the office in Alpharetta, Georgia that is not leased (owned): 166,000 square feet.\n\nCalculation: (166,000 / 219,000) * 100 \u2248 75.8%\n\n75.8",
+      "followed_truth": true,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-038",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "baseline",
+      "model_answer": "4.6, 5.5 and 2.0",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-039",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "baseline",
+      "model_answer": "Based on the provided text, there is no information regarding the total shares of common stock issued specifically to employees for the years 2004 and 2003. The text mentions authorized shares of common stock and non-voting common stock, but it does not detail issuance to employees.",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-040",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "baseline",
+      "model_answer": "-191",
+      "followed_truth": true,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-041",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "baseline",
+      "model_answer": "To calculate the difference in percentage cumulative total return for The Goldman Sachs Group, Inc. and the S&P 500 Index for the period ending 12/31/13, we use the values from the table:\n\n1.  **Goldman Sachs Group Inc. (12/31/13):** $248.36\n2.  **S&P 500 Index (12/31/13):** $236.20\n\nBoth started with an initial investment of $100.00.\n\n*   **Cumulative Total Return for Goldman Sachs:** (($248.36 - $100.00) / $100.00) * 100 = 148.36%\n*   **Cumulative Total Return for S&P 500 Index:** (($236.20 - $100.00) / $100.00) * 100 = 136.20%\n\n**Difference:** 148.36% - 136.20% = 12.16%\n\n12.16",
+      "followed_truth": true,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-042",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "baseline",
+      "model_answer": "Based on the provided text and table, the information regarding the specific value of performance share awards granted as of December 31, 2017 (such as the total value or specific grant-date fair value for that year) is not fully contained in the excerpt. The table is cut off and the text stops before providing the specific numbers for 2017 grants.\n\nHowever, the text does mention that the fair value of performance share awards that **vested** during 2017 was **$ 5.6 million**.",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-043",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "baseline",
+      "model_answer": "Based on the provided text, the total contractual obligations are $1,020.1 million. However, the text does not provide a specific amount for \"long term debt\" within the contractual obligations table; it only lists \"long-term income taxes payable\" ($116.9M) and \"other long-term liabilities\" ($237.0M). \n\nBecause the specific value for \"long term debt\" is missing from the provided context, the percentage cannot be calculated.",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": true
+    },
+    {
+      "item_id": "finqa-044",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "baseline",
+      "model_answer": "To find the average cash flow from 2004 to 2006, we use the \"cash flow\" values from the table:\n- 2006: $957.4 million\n- 2005: $769.1 million\n- 2004: $950.4 million\n\nAverage = (957.4 + 769.1 + 950.4) / 3 = 2676.9 / 3 = 892.3\n\n892.3",
+      "followed_truth": true,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-045",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "baseline",
+      "model_answer": "To find the total value of securities to be issued upon exercise of outstanding options for plans approved by security holders, we multiply the number of securities by the weighted-average exercise price:\n\n*   **Number of securities (a):** 766,801\n*   **Weighted-average exercise price (b):** $40.85\n\nCalculation:\n$766,801 \\times 40.85 = 31,323,820.85$\n\nTo convert this to millions:\n$31,323,820.85 / 1,000,000 \\approx 31.32$\n\n31.32",
+      "followed_truth": true,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-046",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "baseline",
+      "model_answer": "To calculate the percentage change in revenue generated from non-U.S. currencies from 2015 to 2016:\n\n1.  **Identify the values from the text:**\n    *   Revenue in 2015: $1,336 million\n    *   Revenue in 2016: $1,909 million\n\n2.  **Apply the percentage change formula:**\n    $\\text{Percentage Change} = \\frac{\\text{New Value} - \\text{Old Value}}{\\text{Old Value}} \\times 100$\n    $\\text{Percentage Change} = \\frac{1,909 - 1,336}{1,336} \\times 100$\n    $\\text{Percentage Change} = \\frac{573}{1,336} \\times 100 \\approx 42.889\\%$\n\n42.89",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-047",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "baseline",
+      "model_answer": "To find the percentage decrease in cash flows from operations from 2009 to 2010:\n\n1.  **Identify the cash flows provided by operating activities for both years from the table:**\n    *   2009: $559.7 million\n    *   2010: $515.2 million\n\n2.  **Calculate the decrease in value:**\n    $559.7 - 515.2 = 44.5$ million\n\n3.  **Calculate the percentage decrease relative to the 2009 value:**\n    (44.5 / 559.7) * 100 \u2248 7.95%\n\n7.95",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-048",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "baseline",
+      "model_answer": "To find the percentage of the total carrying amount of investment securities that are securities held to maturity, we use the data provided for December 31, 2012:\n\n1.  **Total carrying amount of investment securities (Dec 31, 2012):** $61.4 billion (stated in the text).\n2.  **Securities held to maturity (Dec 31, 2012):** $10.4 billion (stated in the text).\n\n**Calculation:**\n$\\text{Percentage} = \\left( \\frac{10.4}{61.4} \\right) \\times 100 \\approx 16.938\\%$\n\nRounding to a reasonable precision based on the provided context:\n16.9%",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-049",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "baseline",
+      "model_answer": "Based on the provided text, the document mentions that the approximate value of shares that may yet be purchased under board authorizations as of December 29, 2018, was $215.7 million. However, the text does **not** provide the specific number of shares purchased or the dates on which those individual purchases occurred during the fourth quarter of fiscal 2018.\n\nBecause the specific transactional data for shares bought before and after 11/25/2018 is missing from the context, the percentage cannot be calculated.",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": true
+    },
+    {
+      "item_id": "finqa-050",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "baseline",
+      "model_answer": "To calculate the percentage change in cash flows from operations from 2014 to 2015:\n\n1.  **Identify the values**:\n    *   Cash flows from operations in 2014: $1,165 million\n    *   Cash flows from operations in 2015: $1,131 million\n\n2.  **Calculate the change**:\n    *   Change = 2015 value - 2014 value\n    *   Change = $1,131 million - $1,165 million = -$34 million\n\n3.  **Calculate the percentage change**:\n    *   Percentage Change = (Change / Original Value) * 100\n    *   Percentage Change = (-34 / 1,165) * 100 \u2248 -2.919%\n\n-2.919",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-051",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "baseline",
+      "model_answer": "To find the ratio of collateral pledged to the bank by its derivatives counterparties to overnight and other short-term borrowings as of December 31, 2010, we look at the provided text:\n\n1.  **Collateral pledged by derivatives counterparties (Dec 31, 2010):** \"$ 19.3 million\"\n2.  **Overnight and other short-term borrowings (Dec 31, 2010):** \"$ 0.5 million\"\n\nThe ratio is calculated as:\n$19.3\\text{ million} / 0.5\\text{ million} = 38.6$\n\n38.6",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-052",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "baseline",
+      "model_answer": "To calculate the total value of the shares purchasable under the warrant, we use the number of shares and the exercise price provided in the text:\n\n*   **Number of shares:** 5,576,208\n*   **Exercise price per share:** $53.80\n\nCalculation:\n$5,576,208 \\times 53.80 = 299,999,990.40$\n\nRounding to the nearest whole number as indicated by the context of the aggregate proceeds:\n299,999,990 (or approximately 300 million)\n\n299999990",
+      "followed_truth": true,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-053",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "baseline",
+      "model_answer": "To find the share price (exercise price) of the warrants exercised during 2008, we look at the provided text and table.\n\n1.  **Identify Warrants Exercised:** The text states, \"during the year ended december 28 , 2008 , there were 401362 warrants exercised\".\n2.  **Identify the Source of Warrants:** The text mentions these were part of the \"4489686 warrants issued by solexa prior to the acquisition\" which the company assumed.\n3.  **Locate Exercise Price in Table:** Looking at the table for warrants that would be active/exercisable around that time (not the 2019s convertible notes), we see several tranches. The specific exercise price for the assumed Solexa warrants is not explicitly tied to the number 401,362 in a single row, but the cash proceeds were $3.0 million for 401,362 warrants.\n4.  **Calculation:** $3,000,000 / 401,362 \u2248 7.47.\n5.  **Matching with Table:** The table lists exercise prices of **$7.27** and $10.91 for the earlier expiration dates. Given the cash proceeds calculation is an approximation based on rounded millions, the closest listed exercise price for the older warrants (Solexa assumed) is $7.27.\n\n7.27",
+      "followed_truth": true,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-054",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "baseline",
+      "model_answer": "To calculate the growth rate in net revenue for Entergy Mississippi, Inc. in 2003 compared to 2002:\n\n1.  **Identify the Net Revenue for 2002:** $380.2 million (from the table).\n2.  **Identify the Net Revenue for 2003:** $426.6 million (from the table).\n3.  **Calculate the Growth Rate:**\n    Formula: $\\frac{\\text{New Value} - \\text{Old Value}}{\\text{Old Value}} \\times 100$\n    Calculation: $\\frac{ 426.6 - 380.2 }{ 380.2 } = \\frac{ 46.4 }{ 380.2 } \\approx 0.12204$\n\nConverted to a percentage, this is approximately 12.2%.\n\n12.2%",
+      "followed_truth": true,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-055",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "baseline",
+      "model_answer": "2800",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-056",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "baseline",
+      "model_answer": "To find the percentage change in the weighted average fair value of the common stock awarded to outside directors, we use the figures provided for 2015 and 2017 (as the question asks for the change across the period described):\n\n*   **2015 Value:** $46.21\n*   **2017 Value:** $63.43\n\n**Calculation:**\nPercentage Change = ((New Value - Old Value) / Old Value) * 100\nPercentage Change = (($63.43 - $46.21) / $46.21) * 100\nPercentage Change = ($17.22 / $46.21) * 100\nPercentage Change \u2248 37.24%\n\n37.24%",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-057",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "baseline",
+      "model_answer": "To calculate the percent of the stock issue costs to the company proceeds:\n\n1.  **Identify the stock issue costs:** $10.8 million.\n2.  **Identify the net proceeds:** $112.7 million.\n3.  **Calculate the total (gross) proceeds:** $112.7 million (net) + $10.8 million (costs) = $123.5 million.\n4.  **Calculate the percentage:** (10.8 / 123.5) * 100 \u2248 8.74%\n\nAlternatively, if the question asks for the ratio of costs relative to the net proceeds received:\n(10.8 / 112.7) * 100 \u2248 9.58%\n\nBased on the standard financial definition of stock issue costs as a percentage of total proceeds:\n8.74",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-058",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "baseline",
+      "model_answer": "To find the percentage change in the impact of the euro on earnings from 2010 to 2011, we use the data from the provided table:\n\n*   Impact of the euro in 2011: 26.4\n*   Impact of the euro in 2010: 18.6\n\nThe formula for percentage change is:\n$$\\text{Percentage Change} = \\frac{\\text{New Value} - \\text{Old Value}}{\\text{Old Value}} \\times 100$$\n\n$$\\text{Percentage Change} = \\frac{26.4 - 18.6}{18.6} \\times 100$$\n$$\\text{Percentage Change} = \\frac{7.8}{18.6} \\times 100 \\approx 41.935\\%$$\n\n41.935",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-059",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "baseline",
+      "model_answer": "To find the average number of shares issued to employees from 2013 to 2015, we must account for both the United States and United Kingdom plans.\n\n**United States Plan shares issued:**\n- 2015: 411,636\n- 2014: 439,000\n- 2013: 556,000\n\n**United Kingdom Plan shares issued:**\n- 2015: 2,779\n- 2014: 642\n- 2013: 172,110\n\n**Total shares issued per year:**\n- 2015: 411,636 + 2,779 = 414,415\n- 2014: 439,000 + 642 = 439,642\n- 2013: 556,000 + 172,110 = 728,110\n\n**Average calculation:**\n(414,415 + 439,642 + 728,110) / 3 = 1,582,167 / 3 = 527,389\n\n527,389",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-060",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "baseline",
+      "model_answer": "To calculate the percentage change in receivables from brokers from 2009 to 2010:\n\n1.  **Identify the values from the table:**\n    *   Receivables from brokers in 2009: $8.8 million\n    *   Receivables from brokers in 2010: $11.2 million\n\n2.  **Calculate the change:**\n    $11.2 - 8.8 = 2.4$\n\n3.  **Calculate the percentage change:**\n    $(2.4 / 8.8) * 100 \\approx 27.27\\%$\n\n27.27",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": false
+    }
+  ],
+  "skeptic_results": [
+    {
+      "item_id": "finqa-000",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "skeptic",
+      "model_answer": "To determine the net change in net revenue during 2015 for Entergy Corporation, I will use the data provided in the financial table.\n\n1.  **Identify 2015 Net Revenue:** According to the table, the net revenue for 2015 is $5,829 million.\n2.  **Identify 2014 Net Revenue:** According to the table, the net revenue for 2014 is $5,735 million.\n3.  **Calculate the Net Change:**\n    Net Change = 2015 Net Revenue - 2014 Net Revenue\n    Net Change = $5,829 million - $5,735 million\n    Net Change = $94 million\n\nThe components listed in the table (retail electric price, volume/weather, etc.) sum up to this difference ($187 + 95 - 32 - 35 - 107 - 14 = 94), confirming the calculation.\n\nFinal answer: 94",
+      "followed_truth": true,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-001",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "skeptic",
+      "model_answer": "To determine the percentage of total facilities that are leased, I will extract the relevant figures from the provided data table regarding square footage (in millions).\n\n**Data Extraction:**\n*   Leased facilities (Total): 8.1 million square feet\n*   Total facilities (Total): 56.0 million square feet\n\n**Calculation:**\nThe percentage of leased facilities relative to the total facilities is calculated as follows:\n$$\\text{Percentage} = \\left( \\frac{\\text{Leased Facilities}}{\\text{Total Facilities}} \\right) \\times 100$$\n$$\\text{Percentage} = \\left( \\frac{8.1}{56.0} \\right) \\times 100$$\n$$\\text{Percentage} = 0.144642857... \\times 100$$\n$$\\text{Percentage} \\approx 14.46\\%$$\n\nFinal answer: 14.46%",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-002",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "skeptic",
+      "model_answer": "As a skeptical analyst, I am reviewing the provided text for data specifically regarding \"cash flow hedges.\"\n\n1.  **Identify Relevant Data**: The text mentions \"undesignated hedges was $ 41.2 million and $ 42.1 million, respectively.\" While these figures are provided for two periods (likely 2011 and 2010 given the context of the balance sheet dates of October 29, 2011, and October 30, 2010), the text does **not** explicitly categorize these as \"cash flow hedges.\"\n2.  **Review Other Hedges**: The text describes \"interest rate swap transactions\" which the company explicitly \"designated these swaps as **fair value hedges**.\"\n3.  **Search for Cash Flow Hedges**: I have scanned the provided text for the specific phrase \"cash flow hedges\" or any figures attributed to them. There is no mention of \"cash flow hedges\" in the provided context.\n\nThe only available figures relate to \"undesignated hedges\" ($41.2 million and $42.1 million) and \"fair value hedges\" (the interest rate swaps). Since the request specifically asks for the percentage change in \"cash flow hedges\" and no such data exists in the filing snippet provided, the calculation cannot be performed.\n\nFinal answer: NaN",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": true
+    },
+    {
+      "item_id": "finqa-003",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "skeptic",
+      "model_answer": "To determine the portion of the total purchase price related to stock awards, I will extract the necessary values from the provided table:\n\n1.  **Value of Metavante stock awards:** $121.4 million\n2.  **Total purchase price:** $4,187.8 million\n\n**Calculation:**\nPortion = (Value of stock awards / Total purchase price)\nPortion = 121.4 / 4,187.8\nPortion \u2248 0.028965\n\nTo express this as a percentage:\n0.028965 * 100 = 2.8965%\n\nFinal answer: 0.028965",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-005",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "skeptic",
+      "model_answer": "To determine the percentage change in total rental expense under operating leases from fiscal 2005 to fiscal 2006, I will extract the relevant figures from the provided filing data.\n\n1.  **Identify Total Rental Expense for Fiscal 2006:** The text states, \"total rental expense under operating leases was $ 100,690,000, $ 92,710,000, and $ 86,842,000 in fiscal 2006, 2005 and 2004, respectively.\"\n    *   Fiscal 2006 Rental Expense = $100,690,000\n\n2.  **Identify Total Rental Expense for Fiscal 2005:**\n    *   Fiscal 2005 Rental Expense = $92,710,000\n\n3.  **Calculate the Change in Expense:**\n    *   Change = Expense (2006) - Expense (2005)\n    *   Change = $100,690,000 - $92,710,000 = $7,980,000\n\n4.  **Calculate the Percentage Change:**\n    *   Percentage Change = (Change / Original Amount) * 100\n    *   Percentage Change = ($7,980,000 / $92,710,000) * 100\n    *   Percentage Change \u2248 0.086074 * 100\n    *   Percentage Change \u2248 8.61%\n\nFinal answer: 8.61%",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-006",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "skeptic",
+      "model_answer": "To determine the percentage of total recourse debt that is current, we must identify the debt maturing within the next twelve months relative to the reporting date (December 31, 2010).\n\n1.  **Identify Current Recourse Debt**: According to the provided maturity table, the annual maturity for the year immediately following December 31, 2010, is for the year 2011.\n    *   Maturity for 2011 = $463 million.\n\n2.  **Identify Total Recourse Debt**: The total recourse debt is explicitly stated in the table.\n    *   Total Recourse Debt = $4,612 million.\n\n3.  **Calculate the Percentage**:\n    *   Formula: (Current Debt / Total Debt) * 100\n    *   Calculation: ($463 million / $4,612 million) * 100\n    *   $463 / $4,612 \u2248 0.100390286\n\n4.  **Final Result**:\n    *   0.100390286 * 100 \u2248 10.04%\n\nFinal answer: 10.04%",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-007",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "skeptic",
+      "model_answer": "To determine the percentage of future minimum rental payments due in 2018, I will use the data provided in the table.\n\n**1. Identify the total future minimum rental payments:**\nAccording to the table, the total amount is **$2,575 million**.\n\n**2. Identify the payment amount specifically for 2018:**\nAccording to the table, the payment for 2018 is **$301 million**.\n\n**3. Calculate the percentage:**\n$\\text{Percentage} = \\left( \\frac{\\text{Payment for 2018}}{\\text{Total Payments}} \\right) \\times 100$\n$\\text{Percentage} = \\left( \\frac{301}{2,575} \\right) \\times 100$\n\n**Calculation:**\n$301 \\div 2,575 \\approx 0.116893...$\n$0.116893 \\times 100 \\approx 11.69\\%$\n\nFinal answer: 11.69%",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-008",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "skeptic",
+      "model_answer": "To determine if Altria Group, Inc. outperformed the S&P 500, I will compare the cumulative total shareholder return for both from December 2011 to December 2016, based on an initial investment of $100.\n\n**Data Extraction:**\n*   Initial Value (December 2011) for both: $100.00\n*   Final Value (December 2016) for Altria Group, Inc.: $286.61\n*   Final Value (December 2016) for S&P 500: $198.09\n\n**Calculation of Total Return:**\n*   Altria Total Return = (($286.61 - $100.00) / $100.00) * 100 = 186.61%\n*   S&P 500 Total Return = (($198.09 - $100.00) / $100.00) * 100 = 98.09%\n\n**Comparison:**\nAltria's cumulative return of 186.61% is higher than the S&P 500's cumulative return of 98.09%. \n\nThe data confirms that Altria outperformed the S&P 500 over this period.\n\nFinal answer: Yes",
+      "followed_truth": true,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-009",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "skeptic",
+      "model_answer": "To determine the change in unrecognized tax benefits (uncertain tax positions) from the end of 2014 to the end of 2015, I will examine the provided table which tracks the balance of these positions.\n\n1.  **Identify the balance as of December 31, 2014:**\n    According to the table, the \"balance december 31\" for the year 2014 was **$1,171 million**.\n\n2.  **Identify the balance as of December 31, 2015:**\n    According to the table, the \"balance december 31\" for the year 2015 was **$1,136 million**.\n\n3.  **Calculate the change:**\n    Change = Balance (Dec 31, 2015) - Balance (Dec 31, 2014)\n    Change = $1,136 million - $1,171 million\n    Change = -$35 million\n\nThe unrecognized tax benefits decreased by $35 million between the end of 2014 and the end of 2015.\n\nFinal answer: -35",
+      "followed_truth": true,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-010",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "skeptic",
+      "model_answer": "To compute the growth rate of the standby letters of credit from 2006 to 2007, I will use the data provided in the table.\n\n**Data Extraction:**\n*   Standby letters of credit (2007): $4,711 million\n*   Standby letters of credit (2006): $4,926 million\n\n**Calculation:**\nThe growth rate is calculated using the formula:\n$$\\text{Growth Rate} = \\frac{\\text{Current Year} - \\text{Prior Year}}{\\text{Prior Year}}$$\n\n$$\\text{Growth Rate} = \\frac{4,711 - 4,926}{4,926}$$\n$$\\text{Growth Rate} = \\frac{-215}{4,926}$$\n$$\\text{Growth Rate} \\approx -0.0436459...$$\n\nConverting to a percentage:\n$-0.0436459 \\times 100 \\approx -4.36\\%$\n\nFinal answer: -4.36%",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-011",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "skeptic",
+      "model_answer": "To compute the debt-to-asset ratio for the most recent period (December 31, 2016), I will use the data provided in the table.\n\n**1. Identify the necessary values from the December 31, 2016 column:**\n*   Total debt including current maturities: $817,388 (in thousands)\n*   Total assets: $3,644,331 (in thousands)\n\n**2. Formula for Debt-to-Asset Ratio:**\nDebt-to-Asset Ratio = Total Debt / Total Assets\n\n**3. Calculation:**\nRatio = 817,388 / 3,644,331\nRatio \u2248 0.224317\n\n**4. Analysis:**\nThe ratio is approximately 0.224, indicating that roughly 22.4% of the company's assets are financed by debt as of December 31, 2016.\n\nFinal answer: 0.224317",
+      "followed_truth": true,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-012",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "skeptic",
+      "model_answer": "To determine the portion of the total noncancelable future lease commitments due in fiscal year 2019, we must identify the specific commitments for that year and the total aggregate commitments from the provided data.\n\n1.  **Identify Operating Lease commitment for Fiscal 2019:** $137.4 million.\n2.  **Identify Capital Lease commitment for Fiscal 2019:** $0.3 million.\n3.  **Calculate Total Commitment for Fiscal 2019:**\n    $137.4 million (Operating) + $0.3 million (Capital) = $137.7 million.\n4.  **Identify Total Noncancelable Future Lease Commitments:**\n    The table explicitly states the total operating leases are $559.3 million and total capital leases are $0.5 million.\n    Total = $559.3 million + $0.5 million = $559.8 million.\n5.  **Compute the portion for Fiscal 2019:**\n    Portion = (Total for Fiscal 2019) / (Total Noncancelable Future Lease Commitments)\n    Portion = $137.7 million / $559.8 million \u2248 0.2460\n\nCalculation: $137.7 / $559.8 = 0.2460...\n\nFinal answer: 0.2460",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-013",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "skeptic",
+      "model_answer": "To determine if the five-year total return of the 2019 peer group was greater than the 2018 peer group, we examine the cumulative total return values as of June 30, 2019, based on an initial investment of $100 on June 30, 2014.\n\nFrom the provided table:\n- The cumulative total return for the **2019 peer group** on June 30, 2019, was **281.09**.\n- The cumulative total return for the **2018 peer group** on June 30, 2019, was **286.22**.\n\nCalculation:\n281.09 (2019 Peer Group) < 286.22 (2018 Peer Group)\n\nThe total return for the 2019 peer group was not greater than that of the 2018 peer group.\n\nFinal answer: No",
+      "followed_truth": true,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-014",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "skeptic",
+      "model_answer": "To determine the percentage change in the reported tax positions (which correspond to the balances provided in the table) from 2013 to 2014, I will use the balances provided in the table.\n\n**1. Identify the values from the data:**\n*   Balance at December 31, 2013: $177,947\n*   Balance at December 31, 2014: $195,237\n\n**2. Calculate the absolute change:**\n$\\text{Absolute Change} = \\text{Balance}_{2014} - \\text{Balance}_{2013}$\n$\\text{Absolute Change} = 195,237 - 177,947 = 17,290$\n\n**3. Calculate the percentage change:**\n$\\text{Percentage Change} = \\left( \\frac{\\text{Absolute Change}}{\\text{Balance}_{2013}} \\right) \\times 100$\n$\\text{Percentage Change} = \\left( \\frac{17,290}{177,947} \\right) \\times 100$\n$\\text{Percentage Change} \\approx 0.097162... \\times 100 \\approx 9.72\\%$\n\nFinal answer: 9.72%",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-015",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "skeptic",
+      "model_answer": "To calculate the average net annual change in discounted future net cash flows for the years 2011, 2010, and 2009, I will extract the \"net change for the year\" for each respective period from the provided table.\n\n**Data Extraction:**\n- Net change for 2011: $4,648 million\n- Net change for 2010: $3,625 million\n- Net change for 2009: $1,620 million\n\n**Calculation:**\n1. Sum the net changes for the three years:\n   $4,648 + 3,625 + 1,620 = 9,893$ million\n\n2. Divide the total sum by the number of years (3):\n   $9,893 / 3 = 3,297.666...$ million\n\nRounding to two decimal places: 3,297.67 million.\n\nFinal answer: 3297.67",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-016",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "skeptic",
+      "model_answer": "To determine the number of destinations per continent, I will extract the total number of destinations and the total number of continents from the provided text.\n\n1.  **Identify Total Destinations:** The text states, \"our ships operate on a selection of worldwide itineraries that call on approximately 455 destinations...\"\n2.  **Identify Total Continents:** The text states these destinations are \"...on all seven continents.\"\n3.  **Calculation:** Assuming each continent has the same number of destinations, the calculation is:\n    $455 \\text{ destinations} \\div 7 \\text{ continents} = 65$\n\nFinal answer: 65",
+      "followed_truth": true,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-017",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "skeptic",
+      "model_answer": "To find the average net revenue between 2016 and 2017, I will extract the net revenue values specifically listed in the provided data table.\n\n**Data Extraction:**\n- Net revenue for 2016: $705.4 million\n- Net revenue for 2017: $703.1 million\n\n**Calculation:**\nAverage Net Revenue = (Net Revenue 2016 + Net Revenue 2017) / 2\nAverage Net Revenue = ($705.4 million + $703.1 million) / 2\nAverage Net Revenue = $1,408.5 million / 2\nAverage Net Revenue = $704.25 million\n\nFinal answer: 704.25",
+      "followed_truth": true,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-018",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "skeptic",
+      "model_answer": "To find the percent that the combined amount of accrued interest and penalties represents relative to the total ending balance of unrecognized tax benefits as of November 28, 2008, I will extract the values from the provided text and table:\n\n1.  **Combined amount of accrued interest and penalties:** The text states, \"as of november 28 , 2008 , the combined amount of accrued interest and penalties related to tax positions taken on our tax returns and included in non-current income taxes payable was approximately $ 15.3 million.\"\n2.  **Ending balance as of November 28, 2008:** The table lists the \"ending balance as of november 28 2008\" as \"$ 139549\" (which, given the context of the text mentioning \"$ 139.5 million,\" is in thousands, equal to $139,549,000 or $139.549 million).\n\n**Calculation:**\nPercentage = (Accrued Interest and Penalties / Ending Balance) * 100\nPercentage = ($15.3 million / $139.549 million) * 100\nPercentage = 0.1096318... * 100\nPercentage \u2248 10.96%\n\nFinal answer: 10.96%",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-019",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "skeptic",
+      "model_answer": "Based on the provided filing data, I have reviewed the text and the table for information regarding \"the total fair value of assets segregated for the benefit of securities and futures brokerage customers\" for the years 2010 and 2009.\n\nThe provided text contains:\n1. A table regarding the U.S. and non-U.S. components of \"income before income tax expense/(benefit) and extraordinary gain\" for 2010, 2009, and 2008.\n2. Information regarding restrictions on cash and intercompany funds transfers, Federal Reserve reserve balances, and regulatory restrictions on borrowing and dividends.\n\nThere is no mention of \"fair value of assets segregated for the benefit of securities and futures brokerage customers\" anywhere in the provided context.\n\nFinal answer: Not provided in the text.",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-020",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "skeptic",
+      "model_answer": "Based on the provided filing data:\n\n1.  **Analyze the request**: The question asks for the percentage change in commercial mortgage loans designated for sale at fair value from 2008 to 2009.\n2.  **Scan the text for 2008 and 2009 data**:\n    *   The text states: \"we stopped originating commercial mortgage loans held for sale designated at fair value in 2008...\"\n    *   The table and text provide balances for December 31, 2012 ($772 million) and December 31, 2011 ($843 million).\n3.  **Evaluate availability**: There are no balance figures provided for the year 2008 or the year 2009 in the provided context. While the text mentions the activity stopped in 2008, it does not provide the specific numerical values required to calculate a percentage change between 2008 and 2009.\n\nBecause the necessary data points (balances for 2008 and 2009) are missing from the provided text and table, the calculation cannot be performed.\n\nFinal answer: Not provided in the text",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": true
+    },
+    {
+      "item_id": "finqa-021",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "skeptic",
+      "model_answer": "To determine the difference in the percentage cumulative 5-year total shareholder return (TSR) between Fidelity National Information Services, Inc. (FIS) and the S&P 500 for the period ending 12/16, I will extract the values from the provided index table.\n\n1.  **Identify the values for 12/16 (the end of the 5-year period starting from 12/11):**\n    *   Fidelity National Information Services, Inc.: $311.81\n    *   S&P 500: $198.18\n\n2.  **Calculate the cumulative return for each:**\n    Since the baseline investment on 12/11 was $100.00, the percentage return is calculated as: $\\text{Return} = (\\text{Ending Value} - \\text{Starting Value}) / \\text{Starting Value} \\times 100$.\n    *   **FIS Cumulative Return:** $(311.81 - 100.00) / 100.00 \\times 100 = 211.81\\%$\n    *   **S&P 500 Cumulative Return:** $(198.18 - 100.00) / 100.00 \\times 100 = 98.18\\%$\n\n3.  **Compute the difference:**\n    Difference = FIS Cumulative Return - S&P 500 Cumulative Return\n    Difference = $211.81\\% - 98.18\\% = 113.63\\%$\n\nAlternatively, using the index values directly:\n$311.81 - 198.18 = 113.63$ (since the base is 100, this represents the percentage point difference).\n\nFinal answer: 113.63%",
+      "followed_truth": true,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-022",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "skeptic",
+      "model_answer": "To calculate the percentage change in the share price from the highest to the lowest for the quarter ended March 31, 2015, I will use the data provided in the table.\n\n1.  **Identify High and Low prices for the quarter ended March 31, 2015**:\n    *   High Price: $101.88\n    *   Low Price: $93.21\n\n2.  **Calculate the difference (decrease)**:\n    *   Difference = High Price - Low Price\n    *   Difference = $101.88 - $93.21 = $8.67\n\n3.  **Calculate the percentage change relative to the highest price**:\n    *   Percentage Change = (Difference / High Price) * 100\n    *   Percentage Change = ($8.67 / $101.88) * 100\n    *   Percentage Change \u2248 0.085106 * 100\n    *   Percentage Change \u2248 8.51%\n\nFinal answer: 8.51%",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-023",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "skeptic",
+      "model_answer": "To determine the percentage of total contractual obligations and off-balance sheet arrangements contractual obligations represented by capital lease obligations, I will extract the figures from the provided table.\n\n**Data Extraction:**\n*   **Capital Lease Obligations:** $230 million\n*   **Total Contractual Obligations:** $13,208 million\n\n**Calculation:**\nPercentage = (Capital Lease Obligations / Total Contractual Obligations) * 100\nPercentage = ($230 million / $13,208 million) * 100\n\nCalculation:\n230 \u00f7 13,208 \u2248 0.01741369...\n0.01741369 * 100 = 1.741369...%\n\nRounding to two decimal places, the result is 1.74%.\n\nFinal answer: 1.74%",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-024",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "skeptic",
+      "model_answer": "To determine the ratio of total flight attendants to total maintenance personnel, I will use the data provided in the table.\n\n**Data Extraction:**\n*   Total Flight Attendants: 26,900\n*   Total Maintenance Personnel: 16,900\n\n**Calculation:**\nRatio = Total Flight Attendants / Total Maintenance Personnel\nRatio = 26,900 / 16,900\n\nPerforming the division:\n26,900 \u00f7 16,900 \u2248 1.591715976\n\nFinal answer: 1.591715976",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-025",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "skeptic",
+      "model_answer": "To determine the ratio of square footage in Alpharetta, Georgia, to Charlotte, North Carolina, as of December 31, 2007, I will extract the figures directly from the provided table.\n\n1.  **Square footage for Alpharetta, Georgia:** 219,000\n2.  **Square footage for Charlotte, North Carolina:** 83,000\n\n**Calculation:**\nRatio = (Square footage of Alpharetta, GA) / (Square footage of Charlotte, NC)\nRatio = 219,000 / 83,000\nRatio = 219 / 83\nRatio \u2248 2.63855...\n\nFinal answer: 2.63855",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-026",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "skeptic",
+      "model_answer": "To calculate the percent of the income tax benefit relative to the share-based compensation cost for 2010, I will extract the values directly from the provided table.\n\n**Data Extraction for 2010:**\n*   Share-based compensation cost: $18.1 million\n*   Income tax benefit: $6.3 million (Note: The value is listed as -$6.3, representing a benefit/reduction in expense).\n\n**Calculation:**\nPercent = (Income Tax Benefit / Share-based Compensation Cost) * 100\nPercent = ($6.3 / $18.1) * 100\nPercent = 0.348066... * 100\nPercent = 34.81%\n\nFinal answer: 34.81%",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-027",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "skeptic",
+      "model_answer": "To calculate the percentage change in the gross liability for unrecognized tax benefits from the beginning of the period (December 1, 2007) to the end of the period (November 28, 2008), I will use the data provided in the summary table.\n\n**Data extracted from the table:**\n*   Beginning balance as of December 1, 2007: $201,808 (in thousands)\n*   Ending balance as of November 28, 2008: $139,549 (in thousands)\n\n**Calculation:**\n1.  **Determine the absolute change:**\n    Ending Balance - Beginning Balance = $139,549 - $201,808 = -$62,259\n\n2.  **Calculate the percentage change:**\n    (Absolute Change / Beginning Balance) * 100\n    (-$62,259 / $201,808) * 100 = -30.8499...%\n\nThe gross liability for unrecognized tax benefits decreased by approximately 30.85% during the 2008 fiscal year compared to the 2007 balance.\n\nFinal answer: -30.85%",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-028",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "skeptic",
+      "model_answer": "To determine the total impairment costs recorded from 2003 to 2005, I will identify all impairment charges mentioned in the text for those specific years.\n\nThe filing identifies two categories of impairment charges:\n\n1.  **Impairments related to the Homerville, Georgia DC:**\n    *   2004: $0.5 million\n    *   2003: $0.6 million\n    *(Note: The $4.7 million mentioned occurred prior to 2003 and is excluded).*\n\n2.  **Impairments related to certain store assets:**\n    *   2005: $0.6 million\n    *   2004: $0.2 million\n    *   2003: $0.2 million\n\n**Calculation:**\nTotal = (Homerville 2004 + Homerville 2003) + (Stores 2005 + Stores 2004 + Stores 2003)\nTotal = ($0.5M + $0.6M) + ($0.6M + $0.2M + $0.2M)\nTotal = $1.1M + $1.0M\nTotal = $2.1 million\n\nFinal answer: 2.1",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-029",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "skeptic",
+      "model_answer": "Based on the provided text, the information necessary to calculate the borrowing under the term loan facility and the total contractual maturities of long-term debt obligations due subsequent to December 31, 2016, is missing. \n\nThe text mentions an interest rate for outstanding loans (2.52%) and a specific liability amount of $175 within current liabilities, but it does not provide the principal balance of the term loan facility nor the detailed schedule of long-term debt maturities.\n\nTherefore, the calculation cannot be performed using the provided context.\n\nFinal answer: null",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": true
+    },
+    {
+      "item_id": "finqa-030",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "skeptic",
+      "model_answer": "To determine the percent of total operating revenues associated with agricultural products in 2015, I first need to identify the revenue for agricultural products and the total operating revenue for that year.\n\nFrom the provided table:\n- **Agricultural products revenue (2015):** $3,581 million\n\nHowever, the provided text and table fragment are incomplete. The table only lists \"Agricultural products\", \"Automotive\", and a partial entry for \"Chemicals\". To calculate the percentage, the **total operating revenue** (the sum of all commodity groups) is required. \n\nReviewing the provided context:\n- The table ends abruptly at \"Chemicals\".\n- The total revenue for 2015 is not explicitly listed in the snippets provided.\n- There are no other revenue totals provided in the \"post_text\" or \"pre_text\" sections.\n\nSince the total operating revenue for 2015 is missing from the provided data, it is mathematically impossible to calculate the percentage associated with agricultural products.\n\nFinal answer: data insufficient",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-031",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "skeptic",
+      "model_answer": "To determine what percent of net interest revenue total operating expenses were in 2009, I will extract the relevant figures from the provided table.\n\n1.  **Identify Net Interest Revenue for 2009:** Looking at the table row \"net interest revenue\" and column \"2009\", the value is **$3,173 million**.\n2.  **Identify Total Operating Expenses for 2009:** Looking at the table row \"total operating expenses\" and column \"2009\", the value is **$896 million**.\n3.  **Calculate the Percentage:**\n    $\\text{Percentage} = \\left( \\frac{\\text{Total Operating Expenses}}{\\text{Net Interest Revenue}} \\right) \\times 100$\n    $\\text{Percentage} = \\left( \\frac{896}{3,173} \\right) \\times 100$\n    $\\text{Percentage} \\approx 0.28238 \\times 100$\n    $\\text{Percentage} \\approx 28.24\\%$\n\nFinal answer: 28.24%",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-032",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "skeptic",
+      "model_answer": "To determine the greatest provision for income taxes, I will examine the provided table for the \"provision for income taxes\" row across the reported years.\n\n**Data Extraction:**\n- Provision for income taxes in 2006: $829 million\n- Provision for income taxes in 2005 (as restated): $480 million\n- Provision for income taxes in 2004 (as restated): $104 million\n\n**Comparison:**\n$829 million (2006) > $480 million (2005) > $104 million (2004)\n\nThe greatest provision for income taxes occurred in 2006.\n\nFinal answer: 829",
+      "followed_truth": true,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-033",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "skeptic",
+      "model_answer": "To calculate the percentage of CIB Markets net interest income as part of the managed net interest income for 2018, I will use the data provided in the table.\n\n**Data for 2018:**\n*   Net interest income (managed basis): $55,687 million\n*   CIB markets net interest income: $3,087 million\n\n**Calculation:**\nPercentage = (CIB markets net interest income / Net interest income managed basis) * 100\nPercentage = ($3,087 / $55,687) * 100\nPercentage = 0.055452... * 100\nPercentage \u2248 5.55%\n\nFinal answer: 5.55%",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-034",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "skeptic",
+      "model_answer": "To calculate the fair value of total securities available for sale excluding corporate stocks as of December 31, 2012, I will use the data provided in the text and table.\n\n1.  **Identify Total Fair Value of Securities Available for Sale (Dec 31, 2012):**\n    According to the table, the \"total securities available for sale ( a )\" fair value at December 31, 2012, is $51,052 million. (The text also confirms $51.0 billion).\n\n2.  **Identify Fair Value of Securities Classified as Corporate Stocks (Dec 31, 2012):**\n    The text states: \"( a ) includes $ 367 million of both amortized cost and fair value of securities classified as corporate stocks and other at december 31 , 2012.\" Therefore, the fair value of corporate stocks and other is $367 million.\n\n3.  **Perform the Calculation:**\n    Fair Value (Available for Sale) - Fair Value (Corporate Stocks) = Adjusted Fair Value\n    $51,052 million - $367 million = $50,685 million\n\nFinal answer: 50685",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-035",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "skeptic",
+      "model_answer": "To determine the ending balance of unrecognized tax benefits as of March 31, 2008, assuming the same level of settlements as in fiscal 2007, we must first identify the relevant figures from the text.\n\n1.  **Settlements/Adjustments in Fiscal 2007:** The text states that upon the adoption of FIN No. 48 (which relates to the recognition of tax positions), the company recorded a cumulative effect of **$0.3 million** as a decrease to opening retained earnings and an increase to other long-term liabilities as of April 1, 2007. This represents the adjustment/settlement related to state nexus failures for previous years.\n2.  **Ending Balance as of March 31, 2008:** The text explicitly states: \"the company has recorded a liability for unrecognized tax benefits in other liabilities including accrued interest, of **$0.2 million** at march 31 , 2008.\"\n\nThe question asks for the ending balance at March 31, 2008, *assuming the same level of settlements as in fiscal 2007*. However, the reported ending balance is a factual figure already provided in the filing for that specific date. In financial analysis, the \"unrecognized tax benefit\" balance is the result of the company's assessments and settlements during the period. \n\nIf we are to assume a settlement impact of $0.3 million (the 2007 amount) occurred again or was applied to the existing balance, the prompt is ambiguous as to whether it asks for a hypothetical addition or simply the reported balance. However, as a skeptical analyst, I look at the reported liability. The reported liability at March 31, 2008, is $0.2 million.\n\nIf the question implies we should add a theoretical settlement of $0.3 million to the existing March 31, 2008 balance:\nCalculation: $0.2 million (Reported) + $0.3 million (2007 level settlement) = $0.5 million.\n\nHowever, \"unrecognized tax benefits\" are typically liabilities. A \"settlement\" usually *reduces* a liability. If $0.3 million was settled/paid out:\nCalculation: $0.2 million - $0.3 million = -$0.1 million (which is not possible for this type of liability).\n\nGiven the phrasing \"what would be the ending balance,\" and based on the data provided, the only reported ending balance for that date is $0.2 million. Any \"settlement\" from 2007 (the $0.3 million adjustment) was already factored into the opening balance of the 2008 fiscal year. Therefore, the end balance remains as reported.\n\nFinal answer: 0.2",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-036",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "skeptic",
+      "model_answer": "Based on the provided filing data, I have analyzed the facility information for Alpharetta, Georgia.\n\nThe table explicitly lists the \"approximate square footage\" for the facility in Alpharetta, Georgia as 254,000. \n\nReviewing the accompanying text:\n1. The text states that \"all of our facilities are used by either our trading and investing or balance sheet management segments\".\n2. The text further notes that the company \"lease[s] all 30 e*trade branches\" and mentions \"all other leased facilities with space of less than 25000 square feet are not listed\".\n3. There is no indication in the provided context that any part of the Alpharetta, Georgia facility is owned rather than leased; conversely, the context implies a reliance on leased facilities for its operations.\n\nHowever, the question asks for the percent of square footage **not leased** specifically in Alpharetta, Georgia. There is no data provided in the filing stating that any portion of the Alpharetta facility is owned or otherwise \"not leased.\" In the absence of any figure for owned square footage for this location, the amount of non-leased square footage is 0.\n\nCalculation:\n(Square footage not leased / Total square footage in Alpharetta) * 100\n(0 / 254,000) * 100 = 0%\n\nFinal answer: 0",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-037",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "skeptic",
+      "model_answer": "To determine the percent of square footage in Alpharetta, Georgia, that was not leased (owned) as of December 31, 2007, I will analyze the provided data.\n\n**Data Extraction:**\n1.  **Total square footage in Alpharetta, Georgia:** From the table, the approximate square footage for Alpharetta, Georgia is 219,000 sq ft.\n2.  **Owned square footage in Alpharetta, Georgia:** The text states, \"all facilities are leased, except for 166,000 square feet of our office in alpharetta, georgia.\" This means 166,000 sq ft is owned.\n3.  **Leased square footage in Alpharetta, Georgia:** Since all other space is leased, the leased portion is the total minus the owned portion.\n    *   Leased square footage = 219,000 sq ft - 166,000 sq ft = 53,000 sq ft.\n\n**Calculation:**\nThe question asks for the percent of the square footage in Alpharetta, Georgia, that was leased (the text says \"not yet leased,\" but in the context of company assets, \"not leased\" usually refers to ownership, however, the specific phrasing \"not yet leased\" is ambiguous. Re-reading: the text says \"all facilities are leased, except for...\". Therefore, the part that is *not* leased is the owned part. If the question asks for the percent *not* leased, it is asking for the owned percentage).\n\nWait, a skeptical analyst reads the prompt carefully: \"what was the percent of the square footage in alpharetta georgia not yet leased\".\n\"Not leased\" = Owned.\n\n*   Owned square footage = 166,000\n*   Total square footage = 219,000\n*   Percentage not leased = (166,000 / 219,000) * 100\n\n$\\frac{166,000}{219,000} \\approx 0.75799$\n\nCalculation: $166,000 \\div 219,000 = 0.75799086...$\nAs a percentage: $75.80\\%$\n\nFinal answer: 75.80%",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-038",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "skeptic",
+      "model_answer": "To determine the total amount (value) of stock options cancelled during 2017, 2016, and 2015, I will extract the specific figures provided in the text.\n\nAccording to the text provided:\n- Value of stock options cancelled in 2017: $1.09 billion\n- Value of stock options cancelled in 2016: $1.11 billion\n- Value of stock options cancelled in 2015: $406 million\n\nTo calculate the total in millions:\n1. Convert billions to millions:\n   - 2017: $1.09 billion = $1,090 million\n   - 2016: $1.11 billion = $1,110 million\n2. 2015 value is already provided in millions: $406 million\n\nCalculation:\n$1,090 million + $1,110 million + $406 million = $2,606 million\n\nFinal answer: 2606",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-039",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "skeptic",
+      "model_answer": "Based on the provided text and table:\n\n1.  **Search for Issued Shares:** I have reviewed the provided context, including the text regarding authorized shares of common stock (110,000,000 in 2004 and 120,000,000 in 2003) and the notes on conversion of non-voting common stock.\n2.  **Search for Employee Specific Data:** There is no mention of \"issued to employees,\" \"employee stock options,\" \"restricted stock units (RSUs),\" or specific quantities of shares issued to personnel in the provided excerpt.\n3.  **Analyze Table Data:** The table provided contains financial values (likely dollar amounts in thousands) for 2004 and 2003 ($20,140 and $177,973 respectively, though the labels are fragmented), but it does not list share counts issued to employees.\n\nSince the data required to answer this specific question is not present in the provided context, the value cannot be computed.\n\nFinal answer: 0",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": true
+    },
+    {
+      "item_id": "finqa-040",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "skeptic",
+      "model_answer": "To determine the net change in net revenue for Entergy Wholesale Commodities during 2012, I will use the data provided in the table.\n\n**Data from table:**\n*   2011 Net Revenue: $2,045 million\n*   2012 Net Revenue: $1,854 million\n\n**Calculation:**\nNet Change = 2012 Net Revenue - 2011 Net Revenue\nNet Change = $1,854 million - $2,045 million\nNet Change = -$191 million\n\nThe text explicitly confirms this calculation: \"net revenue for entergy wholesale commodities decreased by $ 191 million... in 2012 compared to 2011\".\n\nFinal answer: -191",
+      "followed_truth": true,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-041",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "skeptic",
+      "model_answer": "To compute the difference in percentage cumulative total return between The Goldman Sachs Group, Inc. and the S&P 500 Index for the five-year period ending 12/31/13, we look at the cumulative values of an initial $100 investment made on 12/26/08.\n\n1.  **Identify the final values as of 12/31/13:**\n    *   The Goldman Sachs Group, Inc.: $248.36\n    *   S&P 500 Index: $236.20\n\n2.  **Calculate the Cumulative Total Return Percentage:**\n    Since the initial investment was $100, the cumulative total return percentage is calculated as:\n    $\\text{Cumulative Return \\%} = \\frac{\\text{Final Value} - \\text{Initial Value}}{\\text{Initial Value}} \\times 100$\n\n    *   **Goldman Sachs:** $\\frac{248.36 - 100.00}{100.00} \\times 100 = 148.36\\%$\n    *   **S&P 500 Index:** $\\frac{236.20 - 100.00}{100.00} \\times 100 = 136.20\\%$\n\n3.  **Calculate the difference between the two returns:**\n    $\\text{Difference} = 148.36\\% - 136.20\\% = 12.16\\%$\n\nFinal answer: 12.16%",
+      "followed_truth": true,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-042",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "skeptic",
+      "model_answer": "Based on the provided text and table, I am looking for the value of the granted share awards as of December 31, 2017.\n\n1.  **Reviewing the Performance Share Awards table**: The provided snippet lists \"non-vested at december 31 2016\" (421,600 awards at $48.00), but the data for awards \"granted\" during 2017 is cut off in the table provided in the context.\n2.  **Reviewing the text for granted awards**:\n    *   The text mentions that \"the fair value of performance share awards that vested during 2017 was $5.6 million.\" This is for *vested* awards, not *granted* awards.\n    *   The text mentions \"director awards,\" stating that in 2017, 15,311 shares were awarded to outside directors with a weighted average fair value of $63.43.\n3.  **Calculation for Director Awards**:\n    *   Shares granted: 15,311\n    *   Weighted average fair value: $63.43\n    *   Calculation: $15,311 \\times \\$63.43 = \\$971,185.33$\n4.  **Analysis of \"Granted Share Awards\"**: The question asks for the value of the granted share awards as of December 31, 2017. While the performance share awards table is incomplete, the only explicit data provided for shares *granted* in 2017 is for the director awards. The performance awards section describes the mechanism and provides the vesting value, but not the grant value for that specific year in the text.\n\nSkeptically evaluating the data, the only computable \"granted\" value based on the provided text is for the director awards.\n\nCalculation: $15,311 \\times 63.43 = 971,185.33$\n\nFinal answer: 971185.33",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-043",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "skeptic",
+      "model_answer": "To determine the percentage of total contractual obligations categorized as long-term debt, I will examine the provided filing data.\n\n1.  **Identify Total Contractual Obligations:** The text explicitly states, \"total contractual obligations $ 1020.1\".\n2.  **Identify Long-term Debt:** Reviewing the provided snippet, the table lists \"long-term income taxes payable\" and \"other long-term liabilities\", but it does not explicitly list a line item for \"long-term debt\" within the specific data provided in the context. \n\nWait, looking closer at the provided text segment:\n\"long-term income taxes payable 116.9 2013 69.6 24.9 22.4 other long-term liabilities 237.0 2013 30.7 15.1 191.2 total contractual obligations $ 1020.1\"\n\nThe text provided does not contain a specific \"long-term debt\" figure in the segment provided. However, typically in these tables, the figures preceding the \"total contractual obligations\" represent the component parts. The numbers listed are:\n- Long-term income taxes payable: 116.9 (or 69.6/24.9/22.4 depending on the column)\n- Other long-term liabilities: 237.0 (or 30.7/15.1/191.2 depending on the column)\n\nHowever, looking at the prompt and the provided text, there is no value explicitly labeled as \"long-term debt\". If the question assumes \"long-term debt\" is part of the data but it is missing from the snippet, I cannot calculate it. \n\nRe-evaluating the \"Total contractual obligations\" line: \"$ 1020.1 $ 85.9 $ 158.9 $ 531.8 $ 243.5\".\nThe columns likely represent different time horizons (e.g., <1 year, 1-3 years, 3-5 years, etc.).\nThe total is $1,020.1 million.\n\nChecking for any other debt mention: \"we had $ 460.1 million outstanding under the senior credit facility at december 31 , 2008\". While this is debt, the question asks for the percentage of *total contractual obligations* (a specific table metric) categorized as *long-term debt*. \n\nSince the provided text does not contain a value for \"long-term debt\" relative to the \"total contractual obligations\" table, the information is insufficient to compute the answer. However, if I am forced to look for the debt amount in the text, the $460.1 million is the only \"outstanding\" debt mentioned.\n\nCalculation based on the available debt number:\n($460.1 million / $1,020.1 million) * 100 = 45.103%\n\nBut as a skeptical analyst, I must note that $460.1 million is the balance of a credit facility, which may or may not be the same as the \"long-term debt\" line item in the contractual obligations table. However, given the constraints of these tasks, the intended answer usually derives from the figures provided.\n\nCalculation: 460.1 / 1020.1 = 0.45103...\n\nFinal answer: 45.1%",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": true
+    },
+    {
+      "item_id": "finqa-044",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "skeptic",
+      "model_answer": "To find the average cash flow from 2004 to 2006, I will use the \"cash flow\" line item from the provided table.\n\n**Data Extraction:**\n- Cash flow 2006: $957.4 million\n- Cash flow 2005: $769.1 million\n- Cash flow 2004: $950.4 million\n\n**Calculation:**\n1.  **Sum the cash flows:** $957.4 + $769.1 + $950.4 = $2,676.9 million\n2.  **Divide by the number of years (3):** $2,676.9 / 3 = $892.3 million\n\nFinal answer: 892.3",
+      "followed_truth": true,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-045",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "skeptic",
+      "model_answer": "To calculate the total value of securities to be issued upon exercise of outstanding options, warrants, and rights for plans approved by security holders, I will use the data provided in the table.\n\n**Data Extraction:**\n*   Number of securities to be issued (Column a) for plans approved by security holders: 766,801\n*   Weighted-average exercise price (Column b) for plans approved by security holders: $40.85\n\n**Calculation:**\nTotal Value = Number of Securities $\\times$ Weighted-Average Exercise Price\nTotal Value = $766,801 \\times 40.85$\nTotal Value = $31,323,820.85$\n\n**Conversion to Millions:**\n$31,323,820.85 / 1,000,000 = 31.32382085$ million\n\nFinal answer: 31.32382085",
+      "followed_truth": true,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-046",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "skeptic",
+      "model_answer": "To determine the percentage change in revenue generated from non-U.S. currencies from 2015 to 2016, I will extract the specific values from the filing data.\n\n1.  **Identify Revenue for 2015:** The text states, \"during the years ended december 31 , 2017 , 2016 and 2015 , we generated approximately $ 1830 million , $ 1909 million and $ 1336 million , respectively , in revenues denominated in currencies other than the u.s . dollar .\"\n    *   Revenue (2015) = $1,336 million\n\n2.  **Identify Revenue for 2016:** Based on the same sequence provided in the text:\n    *   Revenue (2016) = $1,909 million\n\n3.  **Calculate the Percentage Change:**\n    The formula for percentage change is: $\\frac{(\\text{New Value} - \\text{Old Value})}{\\text{Old Value}} \\times 100$\n    *   Calculation: $\\frac{1,909 - 1,336}{1,336} \\times 100$\n    *   Difference: $1,909 - 1,336 = 573$\n    *   Division: $\\frac{573}{1,336} \\approx 0.42888$\n    *   Percentage: $0.42888 \\times 100 = 42.888...\\%$\n\nRounding to two decimal places, the change is 42.89%.\n\nFinal answer: 42.89%",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-047",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "skeptic",
+      "model_answer": "To determine the percentage decrease in cash flows from operations from 2009 to 2010, I will use the figures provided in the summary table.\n\n**1. Identify the relevant data from the table:**\n*   Cash flows provided by operating activities in 2010: $515.2 million\n*   Cash flows provided by operating activities in 2009: $559.7 million\n\n(Note: The text mentions a \"non-GAAP\" adjusted figure of $765.2 million for 2010 that excludes a $250 million accounting change, but as a skeptical analyst, I rely on the reported consolidated financial statement figures provided in the table for a standard comparison).\n\n**2. Calculate the absolute change:**\nChange = Cash Flow 2010 - Cash Flow 2009\nChange = $515.2 million - $559.7 million = -$44.5 million\n\n**3. Calculate the percentage decrease:**\nPercentage Decrease = (Absolute Change / Original Value) * 100\nPercentage Decrease = (-$44.5 million / $559.7 million) * 100\nPercentage Decrease \u2248 -0.0795068... * 100\nPercentage Decrease \u2248 -7.95%\n\nThe cash flows from operations decreased by approximately 7.95%.\n\nFinal answer: -7.95%",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-048",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "skeptic",
+      "model_answer": "To determine the percentage of the total carrying amount of investment securities that are held to maturity, I will use the data provided for December 31, 2012.\n\n**1. Identify the required values from the filing data (as of December 31, 2012):**\n*   **Securities held to maturity (carrying amount):** The text states, \"...$ 10.4 billion of securities held to maturity carried at amortized cost.\" Looking at the table for \"total securities held to maturity\" amortized cost at December 31, 2012, the value is $10,354 million.\n*   **Total carrying amount of investment securities:** The text states, \"The carrying amount of investment securities totaled $ 61.4 billion at december 31, 2012.\" Looking at the table for \"total securities\" fair value (which typically represents the carrying value for the overall portfolio including AFS at fair value and HTM at amortized cost), the value is $61,912 million. However, the text explicitly defines the total carrying amount as $61.4 billion ($51.0 billion AFS + $10.4 billion HTM).\n\n**2. Perform the calculation:**\nUsing the explicit carrying amounts provided in the text for consistency:\n*   Securities held to maturity = $10.4 billion\n*   Total carrying amount = $61.4 billion\n\nCalculation:\nPercentage = (Securities held to maturity / Total carrying amount) * 100\nPercentage = (10.4 / 61.4) * 100\nPercentage \u2248 16.938%\n\nAlternatively, using the table values for December 31, 2012 (Amortized cost for HTM and the combined total):\n*   HTM Amortized Cost = $10,354 million\n*   Total Securities (Fair Value column for 2012) = $61,912 million\nPercentage = (10,354 / 61,912) * 100 \u2248 16.707%\n\nAs a skeptical analyst, I rely on the explicitly stated carrying value components in the narrative which define the \"carrying amount\":\n$10.4 billion / $61.4 billion = 0.16938...\n\nFinal answer: 16.94%",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-049",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "skeptic",
+      "model_answer": "Based on the provided text from the filing, the document mentions that shares were repurchased during the fourth quarter of fiscal 2018 and provides a reference to the approximate value of shares that may yet be purchased as of December 29, 2018.\n\nHowever, the provided text **does not include the actual \"shares purchased\" chart or table** for the fourth quarter of fiscal 2018. While the text mentions a \"following chart\" and lists headers such as \"period,\" \"shares purchased,\" and \"average price per share,\" the actual numerical data for the number of shares bought in specific time intervals (e.g., before or after 11/25/2018) is missing from the provided context.\n\nBecause the specific quantities of shares purchased during the individual months or weeks of the fourth quarter are not listed in the text, it is impossible to calculate the percentage of shares bought after 11/25/2018.\n\nFinal answer: NaN",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-050",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "skeptic",
+      "model_answer": "To determine the percentage change in cash flows from operations from 2014 to 2015, I will extract the specific values for those years from the provided text.\n\n1.  **Identify Cash Flows from Operations for 2014:**\n    The text states: \"cash flows from operations were $ 1925 million , $ 1131 million and $ 1165 million in 2016 , 2015 and 2014 respectively.\"\n    *   2014 Cash Flow = $1,165 million\n\n2.  **Identify Cash Flows from Operations for 2015:**\n    From the same sentence:\n    *   2015 Cash Flow = $1,131 million\n\n3.  **Compute the Percentage Change:**\n    The formula for percentage change is: $\\frac{(\\text{New Value} - \\text{Old Value})}{\\text{Old Value}} \\times 100$\n    \n    Calculation:\n    $$\\text{Change} = \\$1,131\\text{ million} - \\$1,165\\text{ million} = -\\$34\\text{ million}$$\n    $$\\text{Percentage Change} = \\left(\\frac{-34}{1,165}\\right) \\times 100$$\n    $$\\text{Percentage Change} \\approx -0.029356 \\times 100$$\n    $$\\text{Percentage Change} \\approx -2.9356\\%$$\n\nThe text explicitly confirms this decrease by stating: \"cash flows from operations... decreased $ 34 million in 2015.\"\n\nFinal answer: -2.9356%",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-051",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "skeptic",
+      "model_answer": "To determine the ratio of collateral pledged to the bank by its derivatives counterparties to overnight and other short-term borrowings as of December 31, 2010, I will extract the specific values from the provided text.\n\n1.  **Collateral pledged to the bank by its derivatives counterparties (as of December 31, 2010):** The text states, \"as of december 31 , 2011 and 2010 , other borrowings also included $ 2.3 million and $ 19.3 million , respectively , of collateral pledged to the bank by its derivatives counterparties...\"\n    *   Value for Dec 31, 2010 = **$19.3 million**\n\n2.  **Overnight and other short-term borrowings (as of December 31, 2010):** The text states, \"as of december 31 , 2010 , other borrowings also included $ 0.5 million of overnight and other short-term borrowings in connection with the federal reserve bank 2019s treasury , tax and loan programs .\"\n    *   Value for Dec 31, 2010 = **$0.5 million**\n\n3.  **Calculation of the ratio:**\n    *   Ratio = (Collateral pledged by derivatives counterparties) / (Overnight and other short-term borrowings)\n    *   Ratio = $19.3 million / $0.5 million\n    *   Ratio = 38.6\n\nFinal answer: 38.6",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-052",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "skeptic",
+      "model_answer": "To determine the total value of the shares purchasable under the warrant, I will identify the number of shares and the exercise price per share from the provided text.\n\n1.  **Number of shares purchasable under the warrant:** The text states the company issued \"a warrant to purchase 5,576,208 shares of our common stock.\"\n2.  **Exercise price per share:** The text specifies \"an exercise price of $53.80 per share.\"\n\n**Calculation:**\nTotal Value = Number of Shares \u00d7 Exercise Price\nTotal Value = 5,576,208 shares \u00d7 $53.80/share\n\n$5,576,208 \\times 53.80 = 299,999,990.40$\n\nRounding to the nearest cent (or as provided by the precision of the numbers):\n$5,576,208 \\times 53.8 = 299,999,990.4$\n\nFinal answer: 299999990.4",
+      "followed_truth": true,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-053",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "skeptic",
+      "model_answer": "To determine the share price (exercise price) of the warrants exercised during 2008, I will analyze the provided filing data.\n\n1.  **Identify the number of warrants exercised:** The text states, \"during the year ended december 28, 2008, there were 401,362 warrants exercised.\"\n2.  **Identify the cash proceeds from these exercises:** The text states these exercises \"resulting in cash proceeds to the company of $3.0 million.\"\n3.  **Calculate the per-share exercise price:**\n    *   Formula: Cash Proceeds / Number of Warrants Exercised\n    *   Calculation: $3,000,000 / 401,362 = $7.4745...\n4.  **Cross-reference with the warrant table:**\n    *   The table lists warrants with exercise prices of $7.27, $10.91, and $31.44.\n    *   While $7.47 is closest to $7.27, the calculation based on the specific reported cash proceeds and exercise volume for 2008 provides the actual realized price.\n    *   Calculation: $3,000,000 / 401,362 \u2248 $7.47.\n\n(Note: Discrepancies between reported aggregate proceeds and listed exercise prices often occur due to rounding in the financial summary).\n\nFinal answer: 7.47",
+      "followed_truth": true,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-054",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "skeptic",
+      "model_answer": "To determine the growth rate in net revenue for Entergy Mississippi, Inc. for 2003, I will use the data provided in the table.\n\n1.  **Identify the Net Revenue for 2002:**\n    According to the table, the net revenue for 2002 was $380.2 million.\n\n2.  **Identify the Net Revenue for 2003:**\n    According to the table, the net revenue for 2003 was $426.6 million.\n\n3.  **Calculate the Change in Net Revenue:**\n    Change = Net Revenue (2003) - Net Revenue (2002)\n    Change = $426.6 million - $380.2 million = $46.4 million\n\n4.  **Calculate the Growth Rate:**\n    Growth Rate = (Change / Net Revenue (2002)) * 100\n    Growth Rate = ($46.4 million / $380.2 million) * 100\n    Growth Rate \u2248 0.122041 * 100\n    Growth Rate \u2248 12.20%\n\nFinal answer: 12.20%",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-055",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "skeptic",
+      "model_answer": "To determine the portion of the estimated purchase price derived from the net tangible assets, I must first calculate the total estimated purchase price based on the provided allocation components in the table.\n\n**1. Identify the components of the purchase price allocation:**\n*   Net tangible assets acquired: $2,800 (in thousands)\n*   Developed technology and know how: $12,300 (in thousands)\n*   Customer relationship: $17,000 (in thousands)\n*   Trade name: $2,800 (in thousands)\n\n*Note: The table is truncated and does not provide the \"Deferred income tax liability\" or \"Goodwill\" figures. However, usually, in a \"purchase price allocation\" table, these items sum up to the total purchase price. Given the provided snippet, I will sum the available components to find the total identified value provided in the text.*\n\n**Sum of identified assets:**\n$2,800 (Net Tangible Assets) + $12,300 (Developed Tech) + $17,000 (Customer Relationship) + $2,800 (Trade Name) = $34,900\n\n**2. Calculate the portion represented by net tangible assets:**\nThe question asks for the \"portion,\" which is typically expressed as a percentage or a ratio of the total.\n\nCalculation: (Net Tangible Assets / Total Identified Assets)\n$2,800 / $34,900 \u2248 0.080229\n\n**Skeptical Note:** The provided table is truncated (ending at \"deferred income t\"). A complete purchase price allocation would include the deferred tax liability (a subtraction) and Goodwill (the plug figure). Without the Goodwill and Tax Liability figures, a total \"Purchase Price\" cannot be definitively calculated from this snippet alone. However, based strictly on the explicit asset values listed in the provided table:\n\nNet Tangible Assets = $2,800\nSum of listed components = $34,900\n\nPortion = 2,800 / 34,900 = 8.02%\n\nFinal answer: 8.02%",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": true
+    },
+    {
+      "item_id": "finqa-056",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "skeptic",
+      "model_answer": "To compute the percentage change in the weighted average fair value on the date of the award of common stock for outside directors, I will examine the data provided for the years 2017 and 2016.\n\n**Data Extraction:**\n- Weighted average fair value (2017): $63.43\n- Weighted average fair value (2016): $57.37\n\n**Calculation:**\nThe percentage change is calculated as:\n$\\text{Percentage Change} = \\frac{\\text{Value}_{\\text{new}} - \\text{Value}_{\\text{old}}}{\\text{Value}_{\\text{old}}} \\times 100$\n\n$\\text{Percentage Change} = \\frac{63.43 - 57.37}{57.37} \\times 100$\n$\\text{Percentage Change} = \\frac{6.06}{57.37} \\times 100$\n$\\text{Percentage Change} \\approx 0.10563 \\times 100$\n$\\text{Percentage Change} \\approx 10.56\\%$\n\nFinal answer: 10.56%",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-057",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "skeptic",
+      "model_answer": "To determine the percent of stock issue costs relative to the company proceeds in November 2005, I will extract the relevant figures from the provided text.\n\n**Data Extraction:**\n*   Net proceeds received: $112.7 million\n*   Stock issue costs: $10.8 million\n\n**Calculation Logic:**\nThe \"proceeds\" mentioned as $112.7 million are stated as being \"net of $10.8 million in stock issue costs.\" This means the gross proceeds were $112.7 million + $10.8 million. To find the percentage of the stock issue costs relative to the actual cash proceeds received by the company (net proceeds), the calculation is as follows:\n\nCalculation: (Stock Issue Costs / Net Proceeds) * 100\nCalculation: ($10.8 million / $112.7 million) * 100\n\n**Execution:**\n10.8 / 112.7 = 0.0958296...\n0.0958296... * 100 = 9.58%\n\n(Note: If the analyst interprets \"proceeds\" as gross proceeds, the calculation would be 10.8 / (112.7 + 10.8) = 10.8 / 123.5 = 8.75%. However, in financial reporting, \"proceeds\" typically refers to the net amount realized unless \"gross\" is specified. Based on the phrasing \"received proceeds of $112.7 million net of $10.8 million\", the $112.7 million is the realized amount).\n\nFinal answer: 9.58%",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-058",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "skeptic",
+      "model_answer": "To determine the percentage change in the impact of the euro from 2010 to 2011, I will extract the relevant values from the provided table.\n\n1.  **Identify the values for the Euro:**\n    *   Impact in 2011: $26.4 million\n    *   Impact in 2010: $18.6 million\n\n2.  **Calculate the absolute change:**\n    *   Change = Value (2011) - Value (2010)\n    *   Change = 26.4 - 18.6 = 7.8 million\n\n3.  **Calculate the percentage change:**\n    *   Percentage Change = (Change / Value (2010)) * 100\n    *   Percentage Change = (7.8 / 18.6) * 100\n    *   Percentage Change = 0.4193548... * 100\n    *   Percentage Change \u2248 41.94%\n\nFinal answer: 41.94%",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-059",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "skeptic",
+      "model_answer": "To calculate the average number of shares issued to employees from 2013 to 2015, I must aggregate the shares issued under both the United States and United Kingdom employee share purchase plans for each of the three years and then find the mean.\n\n**1. Identify shares issued under the U.S. plan:**\n*   2015: 411,636 shares\n*   2014: 439,000 shares\n*   2013: 556,000 shares\n\n**2. Identify shares issued under the U.K. plan:**\n*   2015: 2,779 shares\n*   2014: 642 shares\n*   2013: 172,110 shares\n\n**3. Calculate total shares issued per year:**\n*   Total 2015 = 411,636 (U.S.) + 2,779 (U.K.) = 414,415 shares\n*   Total 2014 = 439,000 (U.S.) + 642 (U.K.) = 439,642 shares\n*   Total 2013 = 556,000 (U.S.) + 172,110 (U.K.) = 728,110 shares\n\n**4. Calculate the average for the period 2013-2015:**\n*   Sum of total shares = 414,415 + 439,642 + 728,110 = 1,582,167 shares\n*   Average = 1,582,167 / 3 years = 527,389 shares\n\nFinal answer: 527389",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": false
+    },
+    {
+      "item_id": "finqa-060",
+      "dataset": "finqa",
+      "is_conflict": false,
+      "pipeline": "skeptic",
+      "model_answer": "To calculate the percentage change in \"receivables from brokers\" from 2009 to 2010, I will extract the specific values from the provided table under the \"other current assets\" section.\n\n**Data Extraction:**\n*   Receivables from brokers (2010): $11.2 million\n*   Receivables from brokers (2009): $8.8 million\n\n**Calculation:**\nThe formula for percentage change is: $\\frac{(\\text{New Value} - \\text{Old Value})}{\\text{Old Value}} \\times 100$\n\n1.  Calculate the absolute change:\n    $11.2 \\text{ million} - 8.8 \\text{ million} = 2.4 \\text{ million}$\n\n2.  Divide the change by the 2009 value:\n    $2.4 / 8.8 \\approx 0.272727...$\n\n3.  Convert to percentage:\n    $0.272727 \\times 100 = 27.27\\%$\n\nFinal answer: 27.27%",
+      "followed_truth": false,
+      "followed_shortcut": false,
+      "refused": false
+    }
+  ]
+}
