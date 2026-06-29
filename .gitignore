@@ -40,3 +40,8 @@ paper/Rplots.pdf
 
 # local-only video/demo notes
 *.local.md
+
+# rendered demo video (large binaries; tape is the source)
+media/*.gif
+media/*.mp4
+media/*.webm

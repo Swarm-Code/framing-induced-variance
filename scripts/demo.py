@@ -95,7 +95,13 @@ def _pick_items(per_item: list[dict], n: int, want_id: str | None) -> list[dict]
     return (flippers or per_item)[:n]
 
 
-def render(data: dict, *, n: int, want_id: str | None, show_table: bool) -> None:
+def render(data: dict, *, n: int, want_id: str | None, show_table: bool,
+           slow: float = 0.0) -> None:
+    def pause(seconds: float) -> None:
+        if slow:
+            import time
+            time.sleep(seconds * slow)
+
     base = data["conditions"]["baseline"]
     prot = data["conditions"]["protocol"]
     per_item = base["per_item"]
@@ -106,6 +112,7 @@ def render(data: dict, *, n: int, want_id: str | None, show_table: bool) -> None
     print(f"\n{BOLD}\u2500\u2500 The Framing Reveal \u00b7 TabFact \u00b7 "
           f"{DIM}replayed from results/fiv_tabfact_scaled.json{OFF} {BOLD}\u2500\u2500{OFF}")
     print(f"{DIM}Same table. Same claim. Only the question's framing changes.{OFF}")
+    pause(1.2)
 
     for it in items:
         gold = it["gold"]
@@ -119,9 +126,11 @@ def render(data: dict, *, n: int, want_id: str | None, show_table: bool) -> None
                     print(f"  {DIM}\u2502 {ln}{OFF}")
                 print(f"  {DIM}\u2502 ...{OFF}")
         print()
+        pause(1.0)
         for slot, verdict in it["verdicts"].items():
             gloss = FRAMING_GLOSS.get(slot, slot)
-            print(f"    {_verdict_cell(verdict, gold)}  {DIM}{gloss}{OFF}")
+            print(f"    {_verdict_cell(verdict, gold)}  {DIM}{gloss}{OFF}", flush=True)
+            pause(0.6)
         distinct = len(set(it["verdicts"].values()))
         verb = "verdict" if distinct == 1 else "distinct verdicts"
         col = GREEN if distinct == 1 else RED
@@ -129,6 +138,7 @@ def render(data: dict, *, n: int, want_id: str | None, show_table: bool) -> None
               f"{' (framing-invariant)' if distinct == 1 else ''}{OFF}")
 
     # Headline numbers (powered run).
+    pause(1.4)
     mc = data["mcnemar_wrong_flip"]
     print(f"\n{BOLD}\u2500\u2500 Powered headline (N={data['n_items']}, "
           f"K=8 framings, R={data['n_rollouts']} rollouts) \u2500\u2500{OFF}")
@@ -156,9 +166,11 @@ def main() -> None:
                     help="(compatibility no-op; the demo always replays the artifact)")
     ap.add_argument("--no-table", dest="table", action="store_false",
                     help="skip the table/claim join")
+    ap.add_argument("--slow", type=float, default=0.0,
+                    help="pacing multiplier for on-camera reveal (e.g. 1.0); 0 = instant")
     args = ap.parse_args()
     data = _load_scaled()
-    render(data, n=args.n, want_id=args.id, show_table=args.table)
+    render(data, n=args.n, want_id=args.id, show_table=args.table, slow=args.slow)
 
 
 if __name__ == "__main__":
